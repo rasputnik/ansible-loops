@@ -1,0 +1,17 @@
+---
+
+# problem is, this is a string
+- debug: msg={{ sudo_groups }}
+
+# this is a bit complex. it basically says:
+#
+#   for loopgroup in sudo_groups:
+#     call inc.yml and pass in loopgroup
+# 
+# since we iterate using 'item' inside inc.yml, this
+# prevents name clashes.
+#
+- include: inc.yml
+  with_items: sudo_groups
+  loop_control:
+    loop_var: loopgroup

@@ -1,0 +1,4 @@
+---
+
+- include: inc.yml
+  with_items: users.metal

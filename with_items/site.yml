@@ -1,0 +1,11 @@
+---
+
+- hosts: localhost
+  vars:
+    data:
+      - group_one
+      - group_two
+      - group_three
+  tasks:
+    - debug: msg={{ item }}
+      with_items: data

@@ -1,0 +1,9 @@
+cronjobs:
+  - command: foo
+    params:
+      - one
+      - two
+  - command: bar
+    params:
+      - three
+      - four

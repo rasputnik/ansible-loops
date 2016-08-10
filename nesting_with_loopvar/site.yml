@@ -1,0 +1,7 @@
+---
+
+- hosts: localhost
+  vars:
+    sudo_groups: "{{ foo_users.metal }}"
+  roles:
+    - foo

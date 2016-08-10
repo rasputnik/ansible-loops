@@ -1,0 +1,11 @@
+---
+
+users:
+  metal:
+    noddy: "Noddy Holder"
+    lemmy: "Lemmy"
+    bruce: "Bruce Dickinson"
+  indie:
+    tim: "Tim Burgess"
+    ian: "Ian Brown"
+    shaun: "Shaun Ryder"

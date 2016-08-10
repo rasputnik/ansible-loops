@@ -1,0 +1,8 @@
+---
+
+# 2.0 version
+- set_fact:
+    group_name={{ item }}
+
+- debug: msg="user={{ item.key }} comment={{ item.value }}"
+  with_items: group_name

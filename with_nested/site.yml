@@ -1,0 +1,19 @@
+---
+
+# with nested runs the task multiple times,
+# with 1st_list[0] + 2nd_list[0], 1st_list[0] + 2nd_list[1], etc.
+#
+# i.e. 
+#
+# * item = [ "foo", 1 ]
+# * item = [ "foo", 2 ]
+# * item = [ "foo", 3 ]
+# * item = [ "bar", 1 ]
+# * item = [ "bar", 2 ]
+# * item = [ "bar", 3 ]
+- hosts: localhost
+  tasks:
+    - debug: msg={{ item }}
+      with_nested:
+        - ["foo", "bar"]
+        - [1, 2, 3]
