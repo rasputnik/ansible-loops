@@ -2,5 +2,5 @@
 # works on 2.1+
 
 - debug: msg="user={{ item.key }} gecos={{ item.value }}"
-  with_dict: loopgroup
+  with_dict: "{{ loopgroup }}"
     

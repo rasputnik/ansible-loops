@@ -3,5 +3,5 @@
 - name: show how the data structure unrolls
   debug: msg="{{ item.0.command }} {{ item.1 }}"
   with_subelements:
-    - cronjobs
+    - "{{ cronjobs }}"
     - params
