@@ -2,6 +2,8 @@
 
 - hosts: localhost
   vars:
-    sudo_groups: "{{ foo_users.metal }}"
+    sudo_groups:
+      - "{{ foo_users.metal }}"
+      - "{{ foo_users.indie }}"
   roles:
     - foo

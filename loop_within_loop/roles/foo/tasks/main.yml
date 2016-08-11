@@ -12,6 +12,6 @@
 # prevents name clashes.
 #
 - include: inc.yml
-  with_items: "{{ sudo_groups }}"
+  with_flattened: "{{ sudo_groups }}"
   loop_control:
     loop_var: loopgroup
